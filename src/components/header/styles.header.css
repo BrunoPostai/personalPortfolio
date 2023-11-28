@@ -1,17 +1,17 @@
 .wrapper {
-    position:absolute;
+    position:relative;
     background: url("/images/backgroundimage.png"), rgba(211, 211, 211, 0) 50% / cover no-repeat ;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 800px;
+    height: 700px;
     top: 0;
   }
   header {
     background: transparent;
-    position: absolute;
     width: 85%;
     top: 0;
+    position: relative;
     left: 7%;
     align-items: center;
   }
