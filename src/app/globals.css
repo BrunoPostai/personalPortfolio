@@ -69,6 +69,9 @@ button {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: 500;
 }
 
 @media (prefers-color-scheme: light) {
