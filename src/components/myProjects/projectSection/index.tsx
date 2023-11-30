@@ -49,7 +49,7 @@ const CardListSection: React.FC<BestBugsCardProps> = ({
   return (
     <a href={link} target="_blank">
         <Card  className="mui-card">
-            <CardActionArea className="cardBox">
+            <CardActionArea>
                 <CardMedia component="img" alt={title} height="160" width="200" image={image}></CardMedia>
                 <CardContent>
                     <Typography variant="h6" component="div">

@@ -11,7 +11,6 @@ function Projects() {
   const projects = BestBugsMock();
 
   const [selected, setSelected] = useState(String);
-  console.log(selected);
 
   const filteredMock = () =>{
     if(selected){
