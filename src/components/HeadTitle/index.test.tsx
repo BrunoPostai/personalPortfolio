@@ -2,6 +2,7 @@ import HeadTitle from ".";
 import { render, getByText } from "@testing-library/react";
 
 import type { Config } from "jest";
+import { text } from "stream/consumers";
 
 const config: Config = {
   testEnvironment: "jsdom",
@@ -25,7 +26,15 @@ describe("HeadTitle", () => {
     const { getByText } = render(<HeadTitle title={text} />);//renderizo o meu componente e passo um texto pra ele
 
     // Verifique se o texto é renderizado corretamente no componente
-    const textElement = getByText(text);
+    const textElement = getByText("texto a ser testado");
     expect(textElement).toBeTruthy();
+    expect(textElement.style.backgroundColor).toBe("red");
   });
+  it("should be id titulo", () => {
+    const { getByText } = render(<HeadTitle title="texto teste"/>);
+    const textElement = getByText("texto teste");
+    expect(textElement.id).toBe("titulo");
+    const elemento = document.getElementById("titulo");
+    expect (elemento).toBeTruthy();
+  })
 });

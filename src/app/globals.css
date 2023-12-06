@@ -6,10 +6,6 @@
   font-family: "Sans";
   src: url("../../public/fontes/Open_Sans/OpenSans.ttf");
 }
-@font-face {
-  font-family: "Inter";
-  src: url("../../public/fontes/Inter-VariableFont_slnt\,wght.ttf");
-}
 :root {
   font-family:"Sans", "Nunito";
   line-height: 1.5;
