@@ -12,7 +12,7 @@ const meta: Meta = {
     title: { control: "text" },
     technologies: {
       control: {
-        type: "select",
+        type: "radio",
         options: ["javascript", "stack", "react", "typescrypt", "css"],
       },
     },
@@ -32,7 +32,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     title: "Your Title",
-    technologies: ["javascript",], 
+    technologies: ["javascript", "stack", "react", "typescrypt", "css"], 
     link: "https://www.example.com",
     image: "https://example.com/image1.jpg",
   },

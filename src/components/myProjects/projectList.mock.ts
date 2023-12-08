@@ -1,5 +1,14 @@
-export const BestBugsMock = () => {
-    return [
+type tech = "javascript" | "stack" | "react" | "typescript" | "css" ;
+
+interface CardListSection {
+  title: string;
+  image: string;
+  filter: string[];
+  technologies: tech[];
+  link: string;
+}
+
+export const CardListSectionMock:CardListSection[] = [
         {
             image:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQThwMYYjNxOHRfaep9RvbKC9nCq6TvMLtMJafRlK-tS48piN-J",
             title: "Primeiro projeto",
@@ -29,4 +38,3 @@ export const BestBugsMock = () => {
             link: "https://www.youtube.com/",
         },
     ]
-}

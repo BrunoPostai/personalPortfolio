@@ -1,12 +1,13 @@
 import React from "react";
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
-import { BestBugsMock } from "../projectList.mock";
+import { CardListSectionMock } from "../projectList.mock";
 import { Icon } from "@iconify/react";
 
+type tech = "javascript" | "stack" | "react" | "typescript" | "css" ;
 interface CardListSection {
   title: string;
   image: string;
-  technologies: string[];
+  technologies: tech[];
   link: string;
 }
 
