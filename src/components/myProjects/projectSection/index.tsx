@@ -3,14 +3,14 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/m
 import { BestBugsMock } from "../projectList.mock";
 import { Icon } from "@iconify/react";
 
-interface BestBugsCardProps {
+interface CardListSection {
   title: string;
   image: string;
   technologies: string[];
   link: string;
 }
 
-const CardListSection: React.FC<BestBugsCardProps> = ({
+const CardListSection: React.FC<CardListSection> = ({
   title,
   image,
   technologies,
