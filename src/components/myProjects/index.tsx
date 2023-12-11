@@ -3,12 +3,12 @@ import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import "./styles.projects.css";
 import React, { useState } from "react";
-import { BestBugsMock } from "./projectList.mock";
+import { CardListSectionMock } from "./projectList.mock";
 import  CardListSection  from "./projectSection/";
 
 
 function Projects() {
-  const projects = BestBugsMock();
+  const projects = CardListSectionMock;
 
   const [selected, setSelected] = useState(String);
 
