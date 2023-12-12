@@ -1,7 +1,7 @@
 "use client";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
-import "./styles.projects.css";
+import styles from "./styles.module.css";
 import React, { useState } from "react";
 import { CardListSectionMock } from "./projectList.mock";
 import  CardListSection  from "./projectSection/";
@@ -20,9 +20,9 @@ function Projects() {
     }
   }
   return (
-    <div className="projectWrapper">
-      <div className="upperWrap">
-        <h2 id="projectTitle">MEUS PROJETOS</h2>
+    <div className={styles.projectWrapper}>
+      <div className={styles.upperWrap}>
+        <h2 id={styles.projectTitle}>MEUS PROJETOS</h2>
         <ButtonGroup
           variant="contained"
           aria-label="outlined primary button group"
@@ -32,7 +32,7 @@ function Projects() {
           <Button onClick={() =>  setSelected("Figma")}>FIGMA</Button>
         </ButtonGroup>
       </div>
-      <div className="bottomWrap">
+      <div className={styles.bottomWrap}>
       {filteredMock().map((item, index) => (
           <CardListSection
             key={index}

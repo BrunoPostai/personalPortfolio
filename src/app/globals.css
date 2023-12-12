@@ -68,7 +68,6 @@ button:focus-visible {
   color: var(--secondary-color);
   font-weight: 500;
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--primary-color);

@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 import { CardListSectionMock } from "../projectList.mock";
 import { Icon } from "@iconify/react";
-
+import styles from "../styles.module.css";
 interface CardListSection {
   title: string;
   image: string;
@@ -48,15 +48,15 @@ const CardListSection: React.FC<CardListSection> = ({
   };
   return (
     <a href={link} target="_blank">
-        <Card  className="mui-card">
+        <Card  className={styles.muiCard}>
             <CardActionArea>
-                <CardMedia component="img" alt={title} height="160" width="200" image={image}></CardMedia>
-                <CardContent>
-                    <Typography variant="h6" component="div">
+                <CardMedia  component="img" alt={title} height="200" width="200" image={image}></CardMedia>
+                <CardContent className={styles.cardContent}>
+                    <Typography sx={{ fontSize: 12 }} component="div">
                         {title}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary" className="iconsWrapper">
-                        {technologies.map((tech, index) => (<Icon key={index} icon={getIcon(tech)} className="techIcons"/>) )}
+                    <Typography variant="body2" color="text.secondary" className={styles.iconsWrapper}>
+                        {technologies.map((tech, index) => (<Icon key={index} icon={getIcon(tech)} className={styles.techIcons}/>) )}
                     </Typography>
                 </CardContent>
             </CardActionArea>

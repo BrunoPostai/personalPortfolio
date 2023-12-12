@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import { Icon } from "@iconify/react";
-import "./styles.aboutMe.css";
+import styles from "./styles.module.css";
 
 const About: React.FC = () => {
   return (
-    <div className="container-wrapper">
-      <div className="leftContainer">
-        <h2 id="aboutMe">ABOUT ME</h2>
+    <div className={styles.containerWrapper}>
+      <div className={styles.leftContainer}>
+        <h2 className={styles.aboutMe}>ABOUT ME</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -18,10 +18,10 @@ const About: React.FC = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div className="rightContainer">
+      <div className={styles.rightContainer}>
         <Icon icon="devicon-plain:materialui" color="white" />
-        <Icon icon="mdi:react" color="white" />
-        <Icon icon="file-icons:config-typescript" color="white" />
+        <Icon  icon="mdi:react" color="white" />
+        <Icon  icon="file-icons:config-typescript" color="white" />
       </div>
     </div>
   );

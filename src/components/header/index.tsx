@@ -1,24 +1,42 @@
-"use client";
 import { Button } from "@mui/material";
 import React from "react";
 import { Icon } from "@iconify/react";
-import "./styles.header.css";
+import styles from "./styles.module.css";
 
 const Header: React.FC = () => {
   return (
-    <div className="wrapper">
-      <header>
-        <a href="#" className="logo">BP</a>
-        <nav>
-          <ul>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li id="contato"><button><a href="#">CONTACT</a></button></li>
+    <div className={styles.wrapper}>
+      <header className={styles.header}>
+        <a href="#" className={styles.logo}>
+          BP
+        </a>
+        <nav className={styles.nav}>
+          <ul className={styles.ul}>
+            <li>
+              <a href="#" className={styles.li}>
+                PROJECTS
+              </a>
+            </li>
+            <li>
+              <a href="#" className={styles.li}>
+                ABOUT ME
+              </a>
+            </li>
+            <li id={styles.contato}>
+              <button className={styles.btn}>
+                <a href="#">CONTACT</a>
+              </button>
+            </li>
           </ul>
         </nav>
       </header>
-      <section>
-        <p>I AM<br/><span id="name">BRUNO POSTAI</span><br/> FRONT-END DEVELOPER</p>
+      <section className={styles.section}>
+        <p>
+          I AM
+          <br />
+          <span className={styles.name}>BRUNO POSTAI</span>
+          <br /> FRONT-END DEVELOPER
+        </p>
       </section>
     </div>
   );
