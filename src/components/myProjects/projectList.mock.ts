@@ -1,11 +1,11 @@
-type tech = "javascript" | "stack" | "react" | "typescript" | "css";
+type tech = "javascript" | "stack" | "react" | "typescript" | "css" ;
 
 interface CardListSection {
-    title: string,
-    image: string,
-    filter: string[],
-    technologies: tech[],
-    link: string;
+  title: string;
+  image: string;
+  filter: string[];
+  technologies: tech[];
+  link: string;
 }
 
 export const CardListSectionMock:CardListSection[] = [
@@ -37,5 +37,4 @@ export const CardListSectionMock:CardListSection[] = [
             technologies: ["javascript","stack","react"],
             link: "https://www.youtube.com/",
         },
-    
-]
+    ]

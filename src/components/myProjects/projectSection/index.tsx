@@ -6,7 +6,7 @@ import styles from "../styles.module.css";
 interface CardListSection {
   title: string;
   image: string;
-  technologies: string[];
+  technologies: tech[];
   link: string;
 }
 
