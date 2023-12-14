@@ -3,6 +3,8 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/m
 import { CardListSectionMock } from "../projectList.mock";
 import { Icon } from "@iconify/react";
 import styles from "../styles.module.css";
+
+type tech = "javascript" | "stack" | "react" | "typescript" | "css" ;
 interface CardListSection {
   title: string;
   image: string;
