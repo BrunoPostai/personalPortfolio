@@ -31,16 +31,23 @@
     margin: 0px auto;
     font-size: 12px;
     color: var(--primary-color);
+    fill: var(--primary-color);
   }
   .techIcons{
     padding: 0px 3px;
+    color: var(--primary-color);
+    fill: var(--primary-color);
   }
 .muiCard{
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
   margin: 20px;
   width: 200px;
   background-color: transparent;
 }
 .cardContent{
+  justify-content: space-between;
   display: flex;
   align-items: center;
   height: 5px;
