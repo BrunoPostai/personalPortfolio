@@ -47,7 +47,6 @@
   background-color: transparent;
 }
 .cardContent{
-  justify-content: space-between;
   display: flex;
   align-items: center;
   height: 5px;
