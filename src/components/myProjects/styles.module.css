@@ -34,6 +34,7 @@
     fill: var(--primary-color);
   }
   .techIcons{
+    margin: 0px auto;
     padding: 0px 3px;
     color: var(--primary-color);
     fill: var(--primary-color);
