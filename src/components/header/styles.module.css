@@ -129,14 +129,40 @@
   .logo {
     display: none;
   }
-
+  .wrapper{
+    height: 50em;
+    overflow-x: hidden;
+  }
+  .section{
+    left: 25%;
+    text-align: center;
+  }
   .nav .ul {
     flex-direction: column;
     display: none;
   }
-
-  .nav .ul .li {
-    flex-direction: column;
-    margin: auto;
+}
+@media screen and (max-width: 450px) {
+  .section{
+    left: 20%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section{
+    left: 15%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .section{
+    left: 10%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 300px) {
+  .section{
+    left: 8%;
+    text-align: center;
   }
 }

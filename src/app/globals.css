@@ -25,7 +25,6 @@
   --bg-color: #1F1F1F;
   --primary-color: #ffffff;
   --secondary-color: #3A86DF;
-
 }
 a {
   color: var(--text-color);
