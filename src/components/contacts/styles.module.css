@@ -19,7 +19,7 @@
     height: 200px;
     display: flex;
     align-items: center;
-    background-image: url(https://m.media-amazon.com/images/I/71H9-O-BuOL._AC_UF894,1000_QL80_.jpg);
+    background-image: url("/images/iconContacts.webp");
     background-size: contain;
     border-radius: 200px;
   }

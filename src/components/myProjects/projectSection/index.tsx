@@ -7,6 +7,7 @@ import styles from "../styles.module.css";
 type tech = "javascript" | "stack" | "react" | "typescript" | "css" ;
 interface CardListSection {
   title: string;
+  alt: string;
   image: string;
   technologies: tech[];
   link: string;
@@ -14,6 +15,7 @@ interface CardListSection {
 
 const CardListSection: React.FC<CardListSection> = ({
   title,
+  alt,
   image,
   technologies,
   link,
@@ -52,7 +54,7 @@ const CardListSection: React.FC<CardListSection> = ({
     <a href={link} target="_blank">
         <Card  className={styles.muiCard}>
             <CardActionArea>
-                <CardMedia  component="img" alt={title} height="200" width="200" image={image}></CardMedia>
+                <CardMedia  component="img" alt={alt} height="200" width="200" image={image}></CardMedia>
                 <CardContent className={styles.cardContent}>
                     <Typography sx={{ fontSize: 12 }} component="div">
                         {title}

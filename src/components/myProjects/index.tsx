@@ -37,6 +37,7 @@ function Projects() {
           <CardListSection
             key={index}
             title={item.title}
+            alt={item.alt}
             image={item.image}
             technologies={item.technologies}
             link={item.link}

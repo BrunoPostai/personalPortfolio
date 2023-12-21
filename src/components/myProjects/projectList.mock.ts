@@ -2,6 +2,7 @@ type tech = "javascript" | "stack" | "react" | "typescript" | "css" ;
 
 interface CardListSection {
   title: string;
+  alt: string,
   image: string;
   filter: string[];
   technologies: tech[];
@@ -10,29 +11,33 @@ interface CardListSection {
 
 export const CardListSectionMock:CardListSection[] = [
         {
-            image:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQThwMYYjNxOHRfaep9RvbKC9nCq6TvMLtMJafRlK-tS48piN-J",
+            image:"./images/project1.webp",
             title: "Primeiro projeto",
+            alt: "Projeto js e css",
             filter: ["Github", "tudo"],
             technologies: ["javascript", "css"],
             link: "https://www.youtube.com/",
         },
         {
-            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI_jkzmv139TK1GIopQv4oCnxAuiczwLZwSb3ndYPbA&s",
+            image:"./images/project2.webp",
             title: "Segundo projeto",
+            alt: "Projeto typescript e react",
             filter: ["Figma", "tudo"],
             technologies: ["typescript","react"],
             link: "https://www.youtube.com/",
         },
         {
-            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIIHlT40JG4U5G69CSKXxuuPwq08Ou6SJQdYyzYtxt9w&s",
+            image:"./images/project3.webp",
             title: "Terceiro projeto",
+            alt: "Projeto javascript, react e css",
             filter: ["Github", "tudo"],
             technologies: ["javascript", "react", "css"],
             link: "https://www.youtube.com/",
         },
         {
-            image:"https://ovicio.com.br/wp-content/uploads/2023/04/20230405-ovicio-shrek-burro-555x555.jpg",
+            image:"./images/project4.webp",
             title: "Quarto projeto",
+            alt: "Projeto js, stack e react",
             filter: ["Figma", "tudo"],
             technologies: ["javascript","stack","react"],
             link: "https://www.youtube.com/",
