@@ -22,12 +22,12 @@ function Projects() {
   return (
     <div className={styles.projectWrapper}>
       <div className={styles.upperWrap}>
-        <h2 id={styles.projectTitle}>MEUS PROJETOS</h2>
+        <h2 id={styles.projectTitle}>MY PROJECTS</h2>
         <ButtonGroup
           variant="contained"
           aria-label="outlined primary button group"
         >
-          <Button onClick={() =>  setSelected("tudo")}>TUDO</Button>
+          <Button onClick={() =>  setSelected("tudo")}>ALL</Button>
           <Button onClick={() =>  setSelected("Github")}>GITHUB</Button>
           <Button onClick={() =>  setSelected("Figma")}>FIGMA</Button>
         </ButtonGroup>
