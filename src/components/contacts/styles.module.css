@@ -44,7 +44,9 @@
   .contactTitle{
     color: var(--secondary-color);
   }
-  
+  .link{
+    height: 30px;
+  }
   @media screen and (max-width: 800px) {
     .divWrapper{
       flex-direction: column-reverse;
