@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Viewport } from "next";
+import Provider from "./provider";
 
 export const metadata: Metadata = {
   title: {
@@ -61,8 +62,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <Provider>
     <html lang="en">
       <body>{children}</body>
     </html>
+    </Provider>
   );
 }

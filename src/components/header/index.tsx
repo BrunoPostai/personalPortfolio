@@ -1,9 +1,12 @@
+"use client"
 import { Button } from "@mui/material";
 import React from "react";
 import { Icon } from "@iconify/react";
 import styles from "./styles.module.css";
+import { useTranslation } from "react-i18next";
 
 const Header: React.FC = () => {
+  const {t, i18n}= useTranslation();
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
@@ -14,7 +17,7 @@ const Header: React.FC = () => {
           <ul className={styles.ul}>
             <li>
               <a href="#" className={styles.li}>
-                PROJECTS
+                {t("projects")}
               </a>
             </li>
             <li>
@@ -24,7 +27,7 @@ const Header: React.FC = () => {
             </li>
             <li id={styles.contato}>
               <button className={styles.btn}>
-                <a href="#">CONTACT</a>
+                <a href="#" onClick={() => {i18n.changeLanguage("pt")}}>CONTACT</a>
               </button>
             </li>
           </ul>
