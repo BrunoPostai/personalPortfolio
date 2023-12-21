@@ -19,7 +19,7 @@
     height: 200px;
     display: flex;
     align-items: center;
-    background-image: url("/images/iconContacts.webp");
+    background-image: url("/images/me.webp");
     background-size: contain;
     border-radius: 200px;
   }
