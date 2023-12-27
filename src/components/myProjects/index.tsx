@@ -20,7 +20,7 @@ function Projects() {
     }
   }
   return (
-    <div className={styles.projectWrapper}>
+    <div className={styles.projectWrapper} id="projects">
       <div className={styles.upperWrap}>
         <h2 id={styles.projectTitle}>MY PROJECTS</h2>
         <ButtonGroup

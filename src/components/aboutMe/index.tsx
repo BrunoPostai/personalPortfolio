@@ -21,7 +21,7 @@ const aboutMeText = `
 
 const About: React.FC = () => {
   return (
-    <div className={styles.containerWrapper}>
+    <div className={styles.containerWrapper} id="about">
       <div className={styles.leftContainer}>
         <h2 className={styles.aboutMe}>ABOUT ME</h2>
         <p>{aboutMeText}</p>

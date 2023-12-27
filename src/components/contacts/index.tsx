@@ -9,7 +9,7 @@ best to respond as promptly as possible. Best regards!`;
 
 function Contact() {
   return (
-    <div className={styles.divWrapper}>
+    <div className={styles.divWrapper} id="contact">
       <div className={styles.rightWrap}>
         <div className={styles.imageBox}></div>
         <div className={styles.socialMedia}>

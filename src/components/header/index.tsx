@@ -14,37 +14,45 @@ const Header: React.FC = () => {
           BP
         </a>
         <div className="lang">
-          <button onClick={() => {
-            i18n.changeLanguage("en")
-          }}>
-            EN
-          </button>
-          <button onClick={() => {
-            i18n.changeLanguage("pt")
-          }}>
-            PT
-          </button>
-          <button onClick={() => {
-            i18n.changeLanguage("it")
-          }}>
-            IT
-          </button>
+          <ul>
+            <li
+              onClick={() => {
+                i18n.changeLanguage("en");
+              }}
+            >
+              EN
+            </li>
+            <li
+              onClick={() => {
+                i18n.changeLanguage("pt");
+              }}
+            >
+              PT
+            </li>
+            <li
+              onClick={() => {
+                i18n.changeLanguage("it");
+              }}
+            >
+              IT
+            </li>
+          </ul>
         </div>
         <nav className={styles.nav}>
           <ul className={styles.ul}>
             <li>
-              <a href="#" className={styles.li}>
+              <a href="#projects" className={styles.li}>
                 {t("header.projects")}
               </a>
             </li>
             <li>
-              <a href="#" className={styles.li}>
-              {t("header.about")}
+              <a href="#about" className={styles.li}>
+                {t("header.about")}
               </a>
             </li>
             <li id={styles.contato}>
               <button className={styles.btn}>
-                <a href="#">{t("header.contact")}</a>
+                <a href="#contact">{t("header.contact")}</a>
               </button>
             </li>
           </ul>
@@ -63,7 +71,6 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
 
 /* onClick={() => {
   i18n.changeLanguage("pt");

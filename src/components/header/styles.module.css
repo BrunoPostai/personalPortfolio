@@ -57,6 +57,9 @@
   font-weight: 600;
   font-size: 30px;
 }
+.lang{
+  display: flex;
+}
 @media screen and (max-width: 1200px) {
   .section{
       top: 38%;
