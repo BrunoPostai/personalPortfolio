@@ -1,0 +1,50 @@
+.stickyOrb {
+    position: sticky;
+    display: flex;
+    left: 90%;
+    bottom: 10%;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+  }
+.ul{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: black;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    padding: 5px;
+    list-style-type: none;
+    margin: 0;
+    display: none; 
+    flex-direction: column;
+  }
+.li {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+.li:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  .stickyOrb:hover .ul {
+    display: block;
+    transform: translateX(-10%);
+  }
+.orbIcon{
+    height: 30px;
+    width: 30px;
+}
+@media screen and (max-width: 450px) {
+    .stickyOrb{
+        left: 85%;
+    }
+  }

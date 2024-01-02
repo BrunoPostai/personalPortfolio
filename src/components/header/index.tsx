@@ -13,31 +13,6 @@ const Header: React.FC = () => {
         <a href="#" className={styles.logo}>
           BP
         </a>
-        <div className="lang">
-          <ul>
-            <li
-              onClick={() => {
-                i18n.changeLanguage("en");
-              }}
-            >
-              EN
-            </li>
-            <li
-              onClick={() => {
-                i18n.changeLanguage("pt");
-              }}
-            >
-              PT
-            </li>
-            <li
-              onClick={() => {
-                i18n.changeLanguage("it");
-              }}
-            >
-              IT
-            </li>
-          </ul>
-        </div>
         <nav className={styles.nav}>
           <ul className={styles.ul}>
             <li>
