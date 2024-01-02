@@ -41,10 +41,7 @@ export const metadata: Metadata = {
   creator: "Bruno Postai",
   publisher: "Vercel",
   manifest: "/manifest.json",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-  },
+  icons: {apple: "/icon.png",},
   appleWebApp: {
     title: "Bruno Postai - Front-end Dev",
   },
@@ -64,21 +61,6 @@ export default function RootLayout({
   return (
     <Provider>
       <html lang="en">
-        <head>
-          <link rel="icon" href="/favicon.ico" sizes="any" />
-          <link
-            rel="icon"
-            href="/icon?favicon.ico"
-            type="image/<generated>"
-            sizes="32x32"
-          />
-          <link
-            rel="apple-touch-icon"
-            href="/apple-icon?<generated>"
-            type="image/<generated>"
-            sizes="<generated>"
-          />
-        </head>
         <body>{children}</body>
       </html>
     </Provider>

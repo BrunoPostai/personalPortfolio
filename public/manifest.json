@@ -1,7 +1,7 @@
 {
     "theme_color": "#3A86DF",
     "background_color": "#1F1F1F",
-    "display": "browser",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "Bruno",
