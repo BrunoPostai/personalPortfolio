@@ -5,9 +5,12 @@ import styles from "./styles.module.css";
 import React, { useState } from "react";
 import { CardListSectionMock } from "./projectList.mock";
 import  CardListSection  from "./projectSection/";
+import { useTranslation } from "react-i18next";
+
 
 
 function Projects() {
+  const { t, i18n } = useTranslation();
   const projects = CardListSectionMock;
 
   const [selected, setSelected] = useState(String);
@@ -22,7 +25,7 @@ function Projects() {
   return (
     <div className={styles.projectWrapper} id="projects">
       <div className={styles.upperWrap}>
-        <h2 id={styles.projectTitle}>MY PROJECTS</h2>
+        <h2 id={styles.projectTitle}>{t("myProjects.myProjects")}</h2>
         <ButtonGroup
           variant="contained"
           aria-label="outlined primary button group"

@@ -2,7 +2,18 @@
     "header":{
         "projects":"PROJECTS",
         "about":"ABOUT ME",
-        "contact":"CONTACT"
+        "contact":"CONTACT",
+        "iam":"I AM",
+        "name":"BRUNO POSTAI",
+        "stack":"FRONT-END DEVELOPER"
+    },
+    "aboutMe":{
+        "aboutMeText":"Hello, I am Bruno, a dedicated web developer passionate about transforming ideas into remarkable digital experiences. With over a year of immersive study in thefield of web development, I have delved into fundamental languages and technologiesto craft engaging online environments Throughout this journey, I have honed solid skills in HTML and CSS, which serve asthe backbone for visual presentation on the web. My proficiency in JavaScript andJSON empowers me to create dynamic and interactive interfaces, offering userssmooth and engaging experiences. Whether it is crafting responsive websites, developing interactive applications, oroptimizing system performance, I am committed to overcoming challenges anddelivering solutions that make a lasting impression."
+    },
+    "myProjects":{
+        "myProjects":"MY PROJECTS"
+    },
+    "contacts":{
+        "contactMe":"It's a pleasure to welcome you! If you'd like to get in touch, I'm available to discuss collaboration opportunities, exciting projects, or simply exchange ideas. Feel free to send a message, and I'll do my best to respond as promptly as possible. Best regards!"
     }
-    
 }

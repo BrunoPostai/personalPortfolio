@@ -1,13 +1,10 @@
 import React from "react";
 import styles from "./styles.module.css";
 import { Icon } from "@iconify/react";
-
-const contactText = `It's a pleasure to welcome you! If you'd like to get in touch, I'm
-available to discuss collaboration opportunities, exciting projects,
-or simply exchange ideas. Feel free to send a message, and I'll do my
-best to respond as promptly as possible. Best regards!`;
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t, i18n } = useTranslation();
   return (
     <div className={styles.divWrapper} id="contact">
       <div className={styles.rightWrap}>
@@ -45,7 +42,7 @@ function Contact() {
       </div>
       <div className={styles.leftWrap}>
         <h2 className={styles.contactTitle}>CONTACT ME</h2>
-        <p className={styles.contactText}>{contactText}</p>
+        <p className={styles.contactText}>{t("contacts.contactMe")}</p>
       </div>
     </div>
   );

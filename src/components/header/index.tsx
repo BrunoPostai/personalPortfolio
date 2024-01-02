@@ -60,10 +60,10 @@ const Header: React.FC = () => {
       </header>
       <section className={styles.section}>
         <p>
-          I AM
+          {t("header.iam")}
           <br />
-          <span className={styles.name}>BRUNO POSTAI</span>
-          <br /> FRONT-END DEVELOPER
+          <span className={styles.name}>{t("header.name")}</span>
+          <br /> {t("header.stack")}
         </p>
       </section>
     </div>

@@ -2,29 +2,17 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import styles from "./styles.module.css";
+import { useTranslation } from "react-i18next";
 
-const aboutMeText = `
-  Hello, I am Bruno, a dedicated web developer passionate about transforming ideas
-  into remarkable digital experiences. With over a year of immersive study in the
-  field of web development, I have delved into fundamental languages and technologies
-  to craft engaging online environments.
-
-  Throughout this journey, I have honed solid skills in HTML and CSS, which serve as
-  the backbone for visual presentation on the web. My proficiency in JavaScript and
-  JSON empowers me to create dynamic and interactive interfaces, offering users
-  smooth and engaging experiences.
-
-  Whether it is crafting responsive websites, developing interactive applications, or
-  optimizing system performance, I am committed to overcoming challenges and
-  delivering solutions that make a lasting impression.
-`;
+const aboutMeText = `$`;
 
 const About: React.FC = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className={styles.containerWrapper} id="about">
       <div className={styles.leftContainer}>
         <h2 className={styles.aboutMe}>ABOUT ME</h2>
-        <p>{aboutMeText}</p>
+        <p>{t("aboutMe.aboutMeText")}</p>
       </div>
       <div className={styles.rightContainer}>
         <Icon icon="devicon-plain:materialui" color="white" />

@@ -2,7 +2,18 @@
     "header":{
         "projects":"PROGETTI",
         "about":"SU DI ME",
-        "contact":"CONTATTO"
+        "contact":"CONTATTO",
+        "iam":"IO SONO",
+        "name":"BRUNO POSTAI",
+        "stack":"SVILUPPATORE FRONT-END"
+    },
+    "aboutMe":{
+        "aboutMeText":"Ciao, sono Bruno, un web developer dedicato appassionato di trasformare idee in straordinarie esperienze digitali. Con oltre un anno di studio immersivo nel campo dello sviluppo web, mi sono immergito nei linguaggi e nelle tecnologie fondamentali per creare ambienti online coinvolgenti. Lungo questo percorso, ho affinato solide competenze in HTML e CSS, che fungono da base per la presentazione visuale sul web. La mia competenza in JavaScript e JSON mi consente di creare interfacce dinamiche e interattive, offrendo agli utenti esperienze fluide e coinvolgenti. Che si tratti di sviluppare siti web responsivi, creare applicazioni interattive o ottimizzare le prestazioni del sistema, sono impegnato a superare sfide e offrire soluzioni che lasciano un'impressione duratura."
+    },
+    "myProjects":{
+        "myProjects":"I MIEI PROGETTI"
+    },
+    "contacts":{
+        "contactMe":"È un piacere darti il benvenuto! Se desideri metterti in contatto, sono disponibile per discutere opportunità di collaborazione, progetti eccitanti o semplicemente scambiare idee. Sentiti libero di inviare un messaggio, farò del mio meglio per rispondere nel più breve tempo possibile. Cordiali saluti!"
     }
-    
 }

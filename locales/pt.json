@@ -2,6 +2,18 @@
     "header":{
         "projects":"PROJETOS",
         "about":"SOBRE MIM",
-        "contact":"CONTATOS"
+        "contact":"CONTATOS",
+        "iam":"EU SOU",
+        "name":"BRUNO POSTAI",
+        "stack":"DESENVOLVEDOR FRONT-END"
+    },
+    "aboutMe":{
+        "aboutMeText":"Olá, eu sou Bruno, um desenvolvedor web dedicado apaixonado por transformar ideias em experiências digitais notáveis. Com mais de um ano de estudo imersivo no campo do desenvolvimento web, mergulhei em linguagens e tecnologias fundamentais para criar ambientes online envolventes. Ao longo dessa jornada, aprimorei habilidades sólidas em HTML e CSS, que servem como a espinha dorsal para a apresentação visual na web. Minha proficiência em JavaScript e JSON me capacita a criar interfaces dinâmicas e interativas, proporcionando aos usuários experiências suaves e envolventes. Seja desenvolvendo sites responsivos, criando aplicações interativas ou otimizando o desempenho do sistema, estou comprometido em superar desafios e oferecer soluções que deixem uma impressão duradoura."
+    }, 
+    "myProjects":{
+        "myProjects":"MEUS PROJETOS"
+    },
+    "contacts":{
+        "contactMe":"É um prazer dar-lhe as boas-vindas! Se deseja entrar em contato, estou disponível para discutir oportunidades de colaboração, projetos empolgantes ou simplesmente trocar ideias. Sinta-se à vontade para enviar uma mensagem, e farei o meu melhor para responder o mais rapidamente possível. Atenciosamente!"
     }
 }
