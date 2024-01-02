@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   description:
     "Portfolio where I show my skills, knowledge and experience from previous works",
-  category:"Portfolio",
+  category: "Portfolio",
   openGraph: {
     type: "website",
     title: "Bruno Postai - Front-end Dev",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     locale: "EN",
     images: "./images/me.webp",
   },
-  authors:[{name:"Bruno Postai"}],
-  keywords:[
+  authors: [{ name: "Bruno Postai" }],
+  keywords: [
     "Portfolio",
     "Desenvolvedor Full Stack",
     "Desenvolvedor Fullstack",
@@ -63,9 +63,24 @@ export default function RootLayout({
 }) {
   return (
     <Provider>
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+      <html lang="en">
+        <head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link
+            rel="icon"
+            href="/icon?favicon.ico"
+            type="image/<generated>"
+            sizes="32x32"
+          />
+          <link
+            rel="apple-touch-icon"
+            href="/apple-icon?<generated>"
+            type="image/<generated>"
+            sizes="<generated>"
+          />
+        </head>
+        <body>{children}</body>
+      </html>
     </Provider>
   );
 }

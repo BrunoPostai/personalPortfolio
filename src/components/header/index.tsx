@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     <div className={styles.wrapper}>
       <header className={styles.header}>
         <a href="#" className={styles.logo}>
-          BP
+          <img src="./images/main-logo-transparent.png" alt="" />
         </a>
         <nav className={styles.nav}>
           <ul className={styles.ul}>

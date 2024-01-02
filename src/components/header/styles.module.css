@@ -15,9 +15,8 @@
   left: 7%;
   align-items: center;
 }
-.logo {
-  color: var(--secondary-color);
-  font-size: 30px;
+.logo img{
+  width: 110px;
 }
 .header,
 .nav .ul {

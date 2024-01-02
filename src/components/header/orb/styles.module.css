@@ -22,21 +22,21 @@
     padding: 5px;
     list-style-type: none;
     margin: 0;
-    display: none; 
     flex-direction: column;
+    opacity: 0;
+    overflow: hidden;
   }
 .li {
     cursor: pointer;
     padding: 5px;
     border-radius: 3px;
-    margin-bottom: 5px;
   }
 .li:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
   }
   .stickyOrb:hover .ul {
-    display: block;
+    opacity: 1;
     transform: translateX(-10%);
   }
 .orbIcon{
