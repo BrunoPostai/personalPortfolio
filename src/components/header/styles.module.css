@@ -28,7 +28,7 @@
 .nav .ul .li {
   margin-left: 3rem;
   text-align: none;
-  padding: 0.5em;
+  padding: 0.3em;
   text-decoration: underline;
 }
 .section {
@@ -48,13 +48,16 @@
 .btn{
   color: var(--secondary-color);
   padding: 0;
-  padding: .2em 2em;
+  padding: .2em 1em;
   background-color: white;
   margin-left: 3rem;
 }
 .name{
   font-weight: 600;
   font-size: 30px;
+}
+.stack{
+  color: var(--secondary-color);
 }
 .animation{
   font-size: 20px;

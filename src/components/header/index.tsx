@@ -38,7 +38,7 @@ const Header: React.FC = () => {
           {t("header.iam")}
           <br />
           <span className={styles.name}>{t("header.name")}</span>
-          <br /> {t("header.stack")}
+          <br /> <span className={styles.stack}>{t("header.stack")}</span>
         </p>
       </section>
     </div>
