@@ -152,7 +152,7 @@
     overflow-x: hidden;
   }
   .section{
-    left: 22%;
+    left: 30%;
     text-align: center;
   }
   .nav .ul {
@@ -162,13 +162,13 @@
 }
 @media screen and (max-width: 450px) {
   .section{
-    left: 18%;
+    left: 25%;
     text-align: center;
   }
 }
 @media screen and (max-width: 400px) {
   .section{
-    left: 15%;
+    left: 20%;
     text-align: center;
   }
 }
@@ -180,8 +180,11 @@
 }
 @media screen and (max-width: 300px) {
   .section{
-    left: 15%;
+    left: 20%;
     text-align: center;
+  }
+  .name{
+    font-size: 25px;
   }
   .animation{
     font-size: 18px;
