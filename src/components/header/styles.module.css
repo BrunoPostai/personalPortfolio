@@ -36,8 +36,8 @@
   align-content: center;
   align-items: center;
   position: absolute;
-  top: 35%;
-  left: 20%;
+  top: 30%;
+  left: 15%;
   font-size: 1.5em;
   font-family:"Inter";
 }
@@ -55,6 +55,22 @@
 .name{
   font-weight: 600;
   font-size: 30px;
+}
+.animation{
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s forwards;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .lang{
   display: flex;
@@ -136,7 +152,7 @@
     overflow-x: hidden;
   }
   .section{
-    left: 25%;
+    left: 22%;
     text-align: center;
   }
   .nav .ul {
@@ -146,7 +162,7 @@
 }
 @media screen and (max-width: 450px) {
   .section{
-    left: 20%;
+    left: 18%;
     text-align: center;
   }
 }
@@ -158,13 +174,16 @@
 }
 @media screen and (max-width: 350px) {
   .section{
-    left: 10%;
+    left: 15%;
     text-align: center;
   }
 }
 @media screen and (max-width: 300px) {
   .section{
-    left: 8%;
+    left: 15%;
     text-align: center;
+  }
+  .animation{
+    font-size: 18px;
   }
 }

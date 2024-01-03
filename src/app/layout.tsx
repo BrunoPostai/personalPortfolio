@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   creator: "Bruno Postai",
   publisher: "Vercel",
   manifest: "/manifest.json",
-  icons: {apple: "/icon.png",},
+  icons: { apple: "/icon.png" },
   appleWebApp: {
     title: "Bruno Postai - Front-end Dev",
   },
@@ -61,6 +61,9 @@ export default function RootLayout({
   return (
     <Provider>
       <html lang="en">
+        <head>
+          <link rel="icon" href="/images/favicon.ico"/>
+        </head>
         <body>{children}</body>
       </html>
     </Provider>

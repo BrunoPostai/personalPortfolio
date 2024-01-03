@@ -34,7 +34,7 @@ const Header: React.FC = () => {
         </nav>
       </header>
       <section className={styles.section}>
-        <p>
+        <p className={styles.animation}>
           {t("header.iam")}
           <br />
           <span className={styles.name}>{t("header.name")}</span>
