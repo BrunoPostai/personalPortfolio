@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'personal-portfolio-delta-murex.vercel.app' + 'sitemap.xml',
+    sitemap: 'personal-portfolio-delta-murex.vercel.app',
   }
 }
