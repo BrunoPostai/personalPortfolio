@@ -32,7 +32,7 @@ function Projects() {
         >
           <Button onClick={() =>  setSelected("tudo")}>ALL</Button>
           <Button onClick={() =>  setSelected("Github")}>GITHUB</Button>
-          <Button onClick={() =>  setSelected("Figma")}>FIGMA</Button>
+          <Button onClick={() =>  setSelected("vercel")}>VERCEL</Button>
         </ButtonGroup>
       </div>
       <div className={styles.bottomWrap}>
