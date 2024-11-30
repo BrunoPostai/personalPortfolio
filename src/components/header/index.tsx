@@ -35,8 +35,6 @@ const Header: React.FC = () => {
       </header>
       <section className={styles.section}>
         <p className={styles.animation}>
-          {t("header.iam")}
-          <br />
           <span className={styles.name}>{t("header.name")}</span>
           <br /> <span className={styles.stack}>{t("header.stack")}</span>
         </p>
