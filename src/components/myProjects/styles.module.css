@@ -36,14 +36,14 @@
   margin: 0px auto;
   margin: 20px;
   width: 220px;
-  background-color: transparent;
+  background-color: black;
 }
 .cardContent{
   justify-content: space-between;
   display: flex;
   align-items: center;
   height: 5px;
-  background-color: #333333;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   width: 90%;
   font-size: 20px;

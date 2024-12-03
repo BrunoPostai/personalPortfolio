@@ -15,9 +15,9 @@ const About: React.FC = () => {
         <p>{t("aboutMe.aboutMeText")}</p>
       </div>
       <div className={styles.rightContainer}>
-        <Icon icon="devicon-plain:materialui" color="white" />
         <Icon icon="mdi:react" color="white" />
         <Icon icon="file-icons:config-typescript" color="white" />
+        <Icon icon="devicon-plain:materialui" color="white" />
       </div>
     </div>
   );

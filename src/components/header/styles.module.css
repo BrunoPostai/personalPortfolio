@@ -157,7 +157,6 @@
     overflow-x: hidden;
   }
   .section{
-    left: 30%;
     text-align: center;
   }
   .nav .ul {
@@ -166,28 +165,9 @@
   }
 }
 @media screen and (max-width: 450px) {
-  .section{
-    left: 25%;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 400px) {
-  .section{
-    left: 20%;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 350px) {
-  .section{
-    left: 15%;
-    text-align: center;
-  }
+
 }
 @media screen and (max-width: 300px) {
-  .section{
-    left: 20%;
-    text-align: center;
-  }
   .name{
     font-size: 25px;
   }

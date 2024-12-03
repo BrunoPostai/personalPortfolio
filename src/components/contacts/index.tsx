@@ -19,10 +19,10 @@ function Contact() {
           </a>
           <a
             className={styles.link}
-            href="https://www.facebook.com/brunogabriel.postaicardoso"
+            href="https://github.com/BrunoPostai"
             target="_blank"
           >
-            <Icon icon="ic:baseline-facebook" color="#3a86df" />
+            <Icon icon="mdi:github" color="#3a86df" />
           </a>
           <a
             className={styles.link}
@@ -33,7 +33,8 @@ function Contact() {
           </a>
           <a
             className={styles.link}
-            href="https://drive.google.com/file/d/1YHYOL3up1XtqQaj2iG70QzEa5owgp2RH/view?usp=sharing"
+            href="./Bruno_postai_CV.pdf"
+            download={"./Bruno_postai_CV.pdf"}
             target="_blank"
           >
             <Icon icon="mingcute:pdf-fill" color="#3a86df" />
