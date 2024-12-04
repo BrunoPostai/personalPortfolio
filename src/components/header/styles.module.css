@@ -4,6 +4,9 @@
   height: 920px;
   top: 0;
 }
+.stacks{
+  display: none;
+}
 .header {
   background: transparent;
   width: 85%;
@@ -26,13 +29,14 @@
   margin-left: 3rem;
   text-align: none;
   padding: 0.3em;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .section {
   display: flex;
   text-align: center;
   position: absolute;
-  top: 33%; 
+  top: 40%;
+  transform: translateY(-50%); 
   width: 100%;
   justify-content: center;
   font-size: 1.5em;
@@ -47,7 +51,7 @@
   padding: 0;
   padding: .2em 1em;
   margin-left: 3rem;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .name{
   font-weight: 600;
@@ -95,10 +99,10 @@
       display: none;
   }
   .animation{
-    font-size:20px;
+    font-size:1em;
   }
   .name{
-    font-size: 25px;
+    font-size: 1em;
   }
   .header{
     width: 100%;
@@ -149,6 +153,10 @@
   }
 }
 @media screen and (max-width: 550px) {
+
+  .stacks{
+    display: block;
+  }
   .logo {
     display: none;
   }
@@ -157,6 +165,8 @@
     overflow-x: hidden;
   }
   .section{
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
   }
   .nav .ul {

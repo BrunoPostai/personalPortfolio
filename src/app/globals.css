@@ -28,6 +28,7 @@ html{
   --bg-color: #0f0f0f;
   --primary-color: #ffffff;
   --secondary-color: #3A86DF;
+  --old-bg-color: #3a3a3a;
 }
 a {
   color: var(--text-color);
