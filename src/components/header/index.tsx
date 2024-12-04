@@ -24,16 +24,7 @@ const Header: React.FC = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.stacks}>
-        <Stack direction="row" spacing={2}>
-          <Item>
-            <a
-              className={styles.link}
-              href="https://www.instagram.com/bpostai/"
-              target="_blank"
-            >
-              <Icon icon="ri:instagram-fill" color="#3a86df" />
-            </a>
-          </Item>
+        <Stack direction="row" spacing={3}>
           <Item>
             {" "}
             <a
