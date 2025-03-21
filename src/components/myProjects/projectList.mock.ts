@@ -44,4 +44,20 @@ export const CardListSectionMock: CardListSection[] = [
     technologies: ["php", "javascript", "css"],
     link: "https://github.com/BrunoPostai/WOWSTORE",
   },
+  {
+    image: "./images/tesla_example.webp",
+    title: "Tesla",
+    alt: "WOW STORE PROJECT MADE ON PHP",
+    filter: ["Github", "tudo"],
+    technologies: ["javascript", "css"],
+    link: "https://brunopostai.github.io/TeslaCustomizableCar/",
+  },
+  {
+    image: "./images/project3.webp",
+    title: "Muscle Mate",
+    alt: "Gym app made on React",
+    filter: ["Github", "tudo"],
+    technologies: ["react", "typescript"],
+    link: "https://mucle-matte.vercel.app/",
+  },
 ];

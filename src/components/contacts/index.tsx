@@ -12,13 +12,6 @@ function Contact() {
         <div className={styles.socialMedia}>
           <a
             className={styles.link}
-            href="https://www.instagram.com/bpostai/"
-            target="_blank"
-          >
-            <Icon icon="ri:instagram-fill" color="#3a86df" />
-          </a>
-          <a
-            className={styles.link}
             href="https://github.com/BrunoPostai"
             target="_blank"
           >
@@ -42,7 +35,7 @@ function Contact() {
         </div>
       </div>
       <div className={styles.leftWrap}>
-        <h2 className={styles.contactTitle}>CONTACT ME</h2>
+        <h2 className={styles.contactTitle}>{t("contacts.title")}</h2>
         <p className={styles.contactText}>{t("contacts.contactMe")}</p>
       </div>
     </div>

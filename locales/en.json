@@ -8,12 +8,14 @@
         "stack": "FRONT-END DEVELOPER"
     },
     "aboutMe": {
+        "title":"ABOUT ME",
         "aboutMeText": "Hi, I am Bruno, a 21-year-old Front-End Developer. I work with React/Next.js, JavaScript, TypeScript, and PHP, and I am currently pursuing a degree in Software Engineering. My journey in tech is driven by a strong desire to expand my skill set and grow as a professional. Currently, I am diving into C# to advance toward becoming a full-stack developer. While my resume may still be developing, one thing I do not lack is eagerness to learn. This makes me ready to tackle new challenges and contribute to impactful projects."
     },
     "myProjects": {
         "myProjects": "MY PROJECTS"
     },
     "contacts": {
+        "title":"CONTACT ME",
         "contactMe": "It's a pleasure to welcome you! If you'd like to get in touch, I'm available to discuss collaboration opportunities, exciting projects, or simply exchange ideas. Feel free to send a message, and I'll do my best to respond as promptly as possible. Best regards!"
     }
 } 
