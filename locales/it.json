@@ -14,6 +14,10 @@
     "myProjects":{
         "myProjects":"I MIEI PROGETTI"
     },
+    "projectSection":{
+        "visitSite": "VISITA IL SITO",
+        "sourceCode": "CODICE SORGENTE"
+    },
     "contacts":{
         "title":"CONTATTAMI",
         "contactMe":"È un piacere darti il benvenuto! Se desideri metterti in contatto, sono disponibile per discutere opportunità di collaborazione, progetti eccitanti o semplicemente scambiare idee. Sentiti libero di inviare un messaggio, farò del mio meglio per rispondere nel più breve tempo possibile. Cordiali saluti!"

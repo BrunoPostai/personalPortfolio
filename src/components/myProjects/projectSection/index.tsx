@@ -12,6 +12,7 @@ import {
 import { Icon } from "@iconify/react";
 import styles from "../styles.module.css";
 import { tech } from "../projectList.mock";
+import { useTranslation } from "react-i18next";
 
 interface CardListSection {
   title: string;
@@ -82,6 +83,7 @@ const CardListSection: React.FC<CardListSection> = ({
     const icon = stackIcons.find((icon) => icon.name === techName);
     return icon ? icon.IconName : "";
   };
+  const { t, i18n } = useTranslation();
   return (
     <Card className={styles.muiCard} sx={{ pointerEvent: "none" }}>
       <CardActionArea>
@@ -100,7 +102,7 @@ const CardListSection: React.FC<CardListSection> = ({
           {loading ? (
             <Skeleton variant="text" width="80%" />
           ) : (
-            <Typography sx={{ fontSize: 18 }} component="div">
+            <Typography sx={{ fontSize: 18, }} component="div">
               {title}
             </Typography>
           )}
@@ -113,14 +115,14 @@ const CardListSection: React.FC<CardListSection> = ({
             <CardActions className={styles.cardActions}>
               {siteLink && (
                 <Button
-                sx={{ padding: "0px" }}
-                href={siteLink}
-                target="_blank"
-                color="inherit"
-                size="small"
-              >
-                SITE
-              </Button>
+                  sx={{ padding: "0px" }}
+                  href={siteLink}
+                  target="_blank"
+                  color="inherit"
+                  size="small"
+                >
+                  {t("projectSection.visitSite")}
+                </Button>
               )}
 
               {repositoryLink && (
@@ -131,7 +133,7 @@ const CardListSection: React.FC<CardListSection> = ({
                   href={repositoryLink}
                   target="_blank"
                 >
-                  SOURCE CODE
+                  {t("projectSection.sourceCode")}
                 </Button>
               )}
             </CardActions>

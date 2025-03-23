@@ -14,6 +14,10 @@
     "myProjects":{
         "myProjects":"MEUS PROJETOS"
     },
+    "projectSection":{
+        "visitSite": "VISITE O SITE",
+        "sourceCode": "CÓDIGO FONTE"
+    },
     "contacts":{
         "title":"CONTATE-ME",
         "contactMe":"É um prazer dar-lhe as boas-vindas! Se deseja entrar em contato, estou disponível para discutir oportunidades de colaboração, projetos empolgantes ou simplesmente trocar ideias. Sinta-se à vontade para enviar uma mensagem, e farei o meu melhor para responder o mais rapidamente possível. Atenciosamente!"
