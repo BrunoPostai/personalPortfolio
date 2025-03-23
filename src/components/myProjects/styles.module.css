@@ -4,82 +4,63 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 500px;
   background-color: var(--bg-color);
+  height: fit-content;
 }
-  #projectTitle {
-    color: var(--secondary-color);
-  }
-  .upperWrap {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column;
-    padding: 20px 0px;
-  }
-  .bottomWrap {
-    display: flex;
-    justify-content:center;
-    width: 100%;
-    padding: 20px; 
-    box-sizing: border-box;
-    text-align: center;
-  }
-  .techIcons{
-    padding: 0px 3px;
-    color: var(--primary-color);
-    fill: var(--primary-color);
-  }
-.muiCard{
+
+#projectTitle {
+  color: var(--secondary-color);
+}
+
+.upperWrap {
   display: flex;
   align-items: center;
-  margin: 0px auto;
-  margin: 20px;
-  width: 220px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+.bottomWrap {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.techIcons {
+  padding: 0px 3px;
+  color: var(--primary-color);
+  fill: var(--primary-color);
+}
+
+.muiCard {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  width: 14em;
+  height: fit-content;
   background-color: black;
 }
-.cardContent{
-  justify-content: space-between;
+
+.cardContent {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100px;
+  max-height: fit-content;
   align-items: center;
-  height: 5px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  width: 90%;
-  font-size: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1%;
+  margin: auto;
 }
-@media screen and (max-width: 1000px) {
-  .bottomWrap{
-    width: 50%;
-    padding: 0;
-  }
-  .muiCard{
-    margin: 20px;
-    width: 180px;
-  }
-}
-@media screen and (max-width: 900px) {
-  .muiCard{
-    margin: 20px;
-    width: 160px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .muiCard{
-    margin: 20px;
-    width: 250px;
-    
-  }
-  .bottomWrap{
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .projectWrapper{
-    height: fit-content;
-  }
-}
-@media screen and (max-width: 400px) {
 
+.cardActions {
+  color: var(--primary-color);
+  margin: auto;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
 }

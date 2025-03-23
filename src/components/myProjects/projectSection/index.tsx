@@ -2,9 +2,12 @@ import React from "react";
 import {
   Card,
   CardActionArea,
+  CardActions,
   CardContent,
   CardMedia,
   Typography,
+  Button,
+  Skeleton,
 } from "@mui/material";
 import { Icon } from "@iconify/react";
 import styles from "../styles.module.css";
@@ -15,7 +18,9 @@ interface CardListSection {
   alt: string;
   image: string;
   technologies: tech[];
-  link: string;
+  siteLink: string;
+  repositoryLink: string;
+  loading?: boolean;
 }
 
 const CardListSection: React.FC<CardListSection> = ({
@@ -23,7 +28,9 @@ const CardListSection: React.FC<CardListSection> = ({
   alt,
   image,
   technologies,
-  link,
+  siteLink,
+  repositoryLink,
+  loading = false,
 }) => {
   const stackIcons = [
     {
@@ -76,37 +83,76 @@ const CardListSection: React.FC<CardListSection> = ({
     return icon ? icon.IconName : "";
   };
   return (
-    <a href={link} target="_blank">
-      <Card className={styles.muiCard}>
-        <CardActionArea>
+    <Card className={styles.muiCard} sx={{ pointerEvent: "none" }}>
+      <CardActionArea>
+        {loading ? (
+          <Skeleton variant="rectangular" width={200} height={150} />
+        ) : (
           <CardMedia
             component="img"
             alt={alt}
-            height="200"
+            height="150"
             width="200"
             image={image}
-          ></CardMedia>
-          <CardContent className={styles.cardContent}>
-            <Typography sx={{ fontSize: 12 }} component="div">
+          />
+        )}
+        <CardContent className={styles.cardContent}>
+          {loading ? (
+            <Skeleton variant="text" width="80%" />
+          ) : (
+            <Typography sx={{ fontSize: 18 }} component="div">
               {title}
             </Typography>
-            <Typography
-              variant="body2"
-              color="text.secondary"
-              className={styles.iconsWrapper}
-            >
-              {technologies.map((tech, index) => (
+          )}
+          {loading ? (
+            <>
+              <Skeleton variant="text" width="70%" />
+              <Skeleton variant="text" width="70%" />
+            </>
+          ) : (
+            <CardActions className={styles.cardActions}>
+              {siteLink && (
+                <Button
+                sx={{ padding: "0px" }}
+                href={siteLink}
+                target="_blank"
+                color="inherit"
+                size="small"
+              >
+                SITE
+              </Button>
+              )}
+
+              {repositoryLink && (
+                <Button
+                  sx={{ padding: "0px" }}
+                  color="inherit"
+                  size="small"
+                  href={repositoryLink}
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </Button>
+              )}
+            </CardActions>
+          )}
+
+          <Typography variant="body2" color="text.secondary">
+            {loading ? (
+              <Skeleton variant="rectangular" width="100%" height={24} />
+            ) : (
+              technologies.map((tech, index) => (
                 <Icon
                   key={index}
                   icon={getIcon(tech)}
                   className={styles.techIcons}
                 />
-              ))}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-    </a>
+              ))
+            )}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 };
 

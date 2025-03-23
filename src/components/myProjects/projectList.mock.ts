@@ -16,7 +16,9 @@ interface CardListSection {
   image: string;
   filter: string[];
   technologies: tech[];
-  link: string;
+  siteLink: string;
+  repositoryLink: string;
+  loading?: boolean;
 }
 
 export const CardListSectionMock: CardListSection[] = [
@@ -26,7 +28,8 @@ export const CardListSectionMock: CardListSection[] = [
     alt: "Pokemon API PROJECT",
     filter: ["tudo", "vercel"],
     technologies: ["react", "javascript", "tailwind",],
-    link: "https://b-ppokedex.vercel.app/",
+    siteLink: "https://b-ppokedex.vercel.app/",
+    repositoryLink: "https://github.com/BrunoPostai/BPpokedex",
   },
   {
     image: "./images/professional_portfolio.png",
@@ -34,7 +37,8 @@ export const CardListSectionMock: CardListSection[] = [
     alt: "Modern portfolio",
     filter: ["vercel", "tudo"],
     technologies: ["next", "typescript", "tailwind"],
-    link: "https://professional-portfolio-sage.vercel.app/",
+    siteLink: "https://professional-portfolio-sage.vercel.app/",
+    repositoryLink: "https://github.com/BrunoPostai/professionalPortfolio",
   },
   {
     image: "./images/project3.webp",
@@ -42,7 +46,8 @@ export const CardListSectionMock: CardListSection[] = [
     alt: "WOW STORE PROJECT MADE ON PHP",
     filter: ["Github", "tudo"],
     technologies: ["php", "javascript", "css"],
-    link: "https://github.com/BrunoPostai/WOWSTORE",
+    siteLink: "",
+    repositoryLink: "https://github.com/BrunoPostai/WOWSTORE",
   },
   {
     image: "./images/tesla_example.webp",
@@ -50,7 +55,8 @@ export const CardListSectionMock: CardListSection[] = [
     alt: "WOW STORE PROJECT MADE ON PHP",
     filter: ["Github", "tudo"],
     technologies: ["javascript", "css"],
-    link: "https://brunopostai.github.io/TeslaCustomizableCar/",
+    siteLink: "https://brunopostai.github.io/TeslaCustomizableCar/",
+    repositoryLink: "https://github.com/BrunoPostai/TeslaCustomizableCar",
   },
   {
     image: "./images/project3.webp",
@@ -58,6 +64,7 @@ export const CardListSectionMock: CardListSection[] = [
     alt: "Gym app made on React",
     filter: ["Github", "tudo"],
     technologies: ["react", "typescript"],
-    link: "https://mucle-matte.vercel.app/",
+    siteLink: "https://mucle-matte.vercel.app/",
+    repositoryLink: "https://github.com/Kallarari/MuscleMate",
   },
 ];
